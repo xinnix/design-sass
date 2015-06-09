@@ -2,8 +2,11 @@
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
 
-$highlight-text-color :  #ffffff;
-$bg-color: #000000;
+$bg-color: #efefef;
+$text-color: #4f4f4f;
+$secondy-text-color: #D9DADA;
+$highlight-text-color: white;
+$button-color: #6cdcac;
 body {
 	font-size: 62.5%;
 	text-align:center;
@@ -66,5 +69,33 @@ body {
 		}
 	}
 	
+}
+.numbers{
+	width:80%;
+	margin:0 auto;
+	ul {
+		position: relative;
+		top:-1em;
+		background: $bg-color;
+		li{
+			float:left;
+			width:25%;
+			box-sizing:border-box;
+			border-top:1px solid $secondy-text-color;
+			border-bottom:1px solid $secondy-text-color;
+			border-left:1px solid $secondy-text-color;
+			&:last-child{
+				border-right: 1px solid $secondy-text-color;
+			}
+			h2{
+				font-size: 2em;
+				padding:1em 0;
+			}
+			h3{
+				padding:0 0 2em 0;
+			}
+		}
+		@include clearfix;
+	}
 }
 
